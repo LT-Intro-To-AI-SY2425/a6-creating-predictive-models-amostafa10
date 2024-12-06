@@ -7,10 +7,15 @@ data = pd.read_csv("part1-linear-regression/blood_pressure_data.csv")
 x = data["Age"].values
 y = data["Blood Pressure"].values
 
+print(x)
+
 # Use reshape to turn the x values into 2D arrays:
-x = x.reshape(-1,1)
+x = x.reshape(-1, 1)
+
+print(x)
 
 # Create the model
+
 
 # Find the coefficient, bias, and r squared values. 
 # Each should be a float and rounded to two decimal places. 
