@@ -12,7 +12,9 @@ y = data["Chirps"].values
 x = x.reshape(-1, 1)
 
 # create the model
-model = LinearRegression().fit(x, y)
+print(x)
+print(y)
+model: LinearRegression = LinearRegression().fit(x, y)
 
 # find the coefficient, bias, and r squared values
 # each should be a float and rounded to two decimal places
@@ -23,7 +25,9 @@ r_squared = model.score(x, y)
 # value you are going to predict
 x_predict = 77
 # plug that value into your model
-prediction = model.predict([[x_predict]])
+prediction = model.predict([
+    [x_predict]
+])
 
 # print out the linear equation and r squared value
 print(f"Model's Linear Equation: y = {coef}x + {intercept}")
