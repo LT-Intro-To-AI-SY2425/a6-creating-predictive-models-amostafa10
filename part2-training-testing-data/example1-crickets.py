@@ -29,7 +29,7 @@ intercept = round(float(model.intercept_), 2)
 r_squared = model.score(xtrain, ytrain)
 
 # print out the linear equation and r^2 value
-print("Model's Linear Equation: y=",coef, "x+", intercept)
+print("Model's Linear Equation: y = ",coef, "x + ", intercept)
 print("R Squared value:", r_squared)
 
 '''
