@@ -8,12 +8,16 @@ After completing `a6_part5.py` answer the following questions
 
 The low spending score and low income group is "Hard Working"
 - These people may not have much, but they live by their means.
+
 The high spending score and low income group is "Loves stuff"
 - They might not have that much money but they still need to buy their stuff.
+
 The medium spending score and medium income group is "Keen Consumer"
 - While they're not buying things crazy, they're still getting things and can reasonably afford them.
+
 The low spending score and high income group is "Saving"
 - They're just saving all their money. Would probably be hard to convince them to buy a roomba.
+
 The high spending score and high income group is "High Rollers"
 - They're wealthy and they buy many things, just sell them whatever.
 
