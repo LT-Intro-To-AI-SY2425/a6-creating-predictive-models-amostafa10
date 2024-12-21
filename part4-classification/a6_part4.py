@@ -10,18 +10,55 @@ x = data[["Age", "EstimatedSalary", "Gender"]].values
 y = data["Purchased"].values
 
 # Step 1: Print the values for x and y
+print(x, y)
 
 # Step 2: Standardize the data using StandardScaler, 
+scaler = StandardScaler().fit(x)
+x = scaler.transform(x)
+
+print(x)
 
 # Step 3: Transform the data
 
 # Step 4: Split the data into training and testing data
+x_train, x_test, y_train, y_test = train_test_split(x, y)
 
 # Step 5: Fit the data
 
 # Step 6: Create a LogsiticRegression object and fit the data
+model = linear_model.LogisticRegression().fit(x_train, y_train)
 
 # Step 7: Print the score to see the accuracy of the model
+print("Accuracy:", model.score(x_test, y_test))
 
 # Step 8: Print out the actual ytest values and predicted y values
 # based on the xtest data
+example = [[34, 56000, 1]]
+scaler.fit(example)
+example = scaler.transform(example)
+
+print(model.predict(example))
+
+# print("*************")
+# print("Testing Results:")
+# print("")
+# print(y_test)
+# for index in range(len(x_test)):
+#     x = x_test[index]
+#     x = x.reshape(-1, 3)
+#     print(x)
+#     y_pred = int(model.predict(x))
+
+#     if y_pred == 0:
+#         y_pred = "Didn't purchase"
+#     else:
+#         y_pred = "Purchased"
+
+#     actual = y_test[index]
+#     if actual == 0:
+#         actual = "Didn't purchase"
+#     else:
+#         actual = "Purchased"
+
+#     if actual != y_pred:
+#         print(f"predicted purchase: {y_pred} | actual purchased: {actual}\n\n")
